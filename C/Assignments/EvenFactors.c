@@ -18,19 +18,20 @@ void Fun(int No)
 {
 	if(No <= 0)
 	{
-		return;
+		No = -No;
 	}
 
-	int i = 1; 
+	register int i = 0;
 
-	while(No > 0)
+	for(i = 1 ; i <= No/2 ; i++)
 	{
-		if((i % 2) == 0)		
+		if((No % i) == 0)
 		{
-			printf("%d\t",i);
-			No--;
+			if((i % 2) == 0)
+			{
+				printf("%d\t",i);
+			}
 		}
-		i++;
 	}
 }
 

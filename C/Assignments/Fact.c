@@ -1,33 +1,30 @@
 #include<stdio.h>
 
-void Fun(int);
+int Fun(int);
 
 int main()
 {
 	int value1 = 0;
+	int ret = 0;
 
 	printf("Enter Number:");
 	scanf("%d",&value1);
 
-	Fun(value1);
+	ret = Fun(value1);
+	printf("Factorial is:%d\n",ret);
 			
 	return 0;
 }
 
-void Fun(int No)
+int Fun(int No)
 {
-	int a = 1 , b = 0 , c = 0;
+	int fact = 1;
 
 	while(No != 0)
 	{
-		c = a + b;
-
-		printf("%d\t",c);
-
-		a = b;
-		b = c;
-
+		fact = fact * No;
 		No--;
 	}
+	return fact;
 }
 
