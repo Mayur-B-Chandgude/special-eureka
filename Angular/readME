@@ -1,1 +1,31 @@
+**************************************************************************
+**************** Installation on Linux System ****************************
 
+Install / Updating npm: (node package manager)
+npm install -g npm
+
+Install CLI (Command line interface)
+npm install -g @angular/cli
+
+to update CLI
+npm uninstall -g @angular/cli
+npm cache verify
+npm install -g @angular/cli@next
+**************************************************************************
+
+**************************************************************************
+********** Steps to Build and Execute Typescript Applications ************
+
+To compile TypeScript into JavaScript you need to have TypeScript installed.
+
+To install TypeScript using the Node Package Manager (npm) type the command:
+npm install -g typescript
+
+Now we can use the 'tsc' command to transcribe TypeScript into Javascript.
+tsc Name_Of_File.ts
+
+After successful transcompilation new file of javascript gets generated as Name_Of_File.js
+
+To execute the javascript application use below command as:
+node Name_Of_File.js
+**************************************************************************
