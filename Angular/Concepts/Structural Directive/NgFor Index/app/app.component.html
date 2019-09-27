@@ -1,0 +1,29 @@
+<!--Create one container to store the elemenrts-->
+<div class="container">
+        <h1>Marvellous Infosystems</h1>
+        <br>
+        <div class="row">
+            <div class="col-xs-15">
+              <label>Enter Students Name</label>
+              <br>
+              <input type="text" class="form-control" [(NgModel)]="sname">
+              <br>
+              <button class="btn btn-info" (click)="AddStudent()">Submit</button>
+            </div>
+        </div>
+        
+        <div class= "row">
+          <div class="col-xs-15">
+              <div
+              class="panel panel-default"      
+              *ngFor="let element of sarr; let i = index"> <!--Iterate element form sarr into elelemnt and fetch index into variable i-->
+              <div class="panel-heading">Students Name fom Marvellous Infosystems</div>
+              <div class="panel-body">  
+                <p> <!--Display subject name in red and practicalin blue-->
+                  <em>{{i+1}} : {{ element }}</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
