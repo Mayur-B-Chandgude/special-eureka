@@ -1,0 +1,23 @@
+<h1 *ngIf="true">Pune</h1>
+
+<h1 *ngIf="flag">Maharashtra</h1>
+
+<h1 *ngIf="flag; else otherpart">Hello</h1>
+<ng-template #otherpart>
+    <h1>
+        World
+    </h1>
+</ng-template>
+
+<div *ngIf="flag; then ifblock; else elseblock"></div>
+<ng-template #ifblock>
+    <h1>
+        Marvellous If Block
+    </h1>
+</ng-template>
+
+<ng-template #elseblock>
+    <h1>
+        Marvellous Else Block
+    </h1>
+</ng-template>
