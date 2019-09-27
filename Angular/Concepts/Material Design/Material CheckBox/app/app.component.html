@@ -1,0 +1,18 @@
+
+<h1>Marvellous Infosystems Material Design</h1>
+
+<h2>Check Box Demonstration</h2>
+
+<mat-checkbox
+#mycheckbox 
+[value]=""
+[checked]="isChecked"
+(change)="ChangeEvent($event)"
+>
+  Please Select accept terms and conditions
+</mat-checkbox>
+
+<!--Display if checkbox is selected-->
+<div *ngIf="mycheckbox.checked">
+  <h3>Thank you for accepting terms and conditions</h3>
+</div>
