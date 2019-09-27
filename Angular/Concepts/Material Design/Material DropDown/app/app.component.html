@@ -1,0 +1,16 @@
+
+<h1>Marvellous Infosystems Material Design</h1>
+
+<h2>DropDown List Demonstration</h2>
+
+<h1>Slect any batch</h1>
+<form>
+<mat-form-field>
+    <mat-select placeholder="Select Batch" [(ngModel)]="selectedValue" name="data">
+      <mat-option *ngFor="let data of Batches" [value]="data.Fees">
+        {{data.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p>Fees of Selected Batch is: {{selectedValue}} </p>
+</form>
