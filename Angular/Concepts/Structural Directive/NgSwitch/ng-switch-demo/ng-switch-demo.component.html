@@ -1,0 +1,23 @@
+<h1>
+    Marvellos Infosystems batches
+</h1>
+
+<div [ngSwitch]="batch">
+
+    <div *ngSwitchCase="'PPA'">
+        You selected Pre Placement Activity batch
+    </div>
+
+    <div *ngSwitchCase="'LB'">
+        You selected Logic Building batch
+    </div>
+    
+    <div *ngSwitchCase="'Web'">
+        You selected Web Development batch
+    </div>
+
+    <div *ngSwitcgDefault>
+        Wrong Choice
+    </div>
+
+</div>
