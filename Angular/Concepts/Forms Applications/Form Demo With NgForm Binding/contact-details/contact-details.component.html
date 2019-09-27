@@ -1,0 +1,19 @@
+<form #Marvellous="ngForm">
+
+  {{Marvellous.value | json}}
+  <hr />
+  {{obj | json}}
+  <hr/>
+  <div class="form-group">
+  <label>Student name of Marvellous Infosystems</label>
+  <input id="name" type="text" class="form-control" name="StudentName" [(ngModel)]="obj.name">
+</div>
+
+<div class="form-group">
+    <label>Your Feedback</label>
+    <textarea id = "comment" cols="30" rows="15" class="form-control" name="Feedback" [(ngModel)]="obj.feedback"></textarea>
+</div>
+<div>
+  <button class="btn btn-primary">Submit</button>
+</div>
+</form>
