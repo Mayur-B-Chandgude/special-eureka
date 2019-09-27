@@ -1,0 +1,11 @@
+<div *ng For="let value of batches">
+    <h2>
+        {{value}}
+    </h2>
+</div>
+
+<div *ngFor="let value of batches; index as i">
+    <h2>
+        {{i }} {{value}}
+    </h2>
+</div>
