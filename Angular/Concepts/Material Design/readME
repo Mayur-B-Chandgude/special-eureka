@@ -1,1 +1,16 @@
+*****************************************************************
+********** Material Design Installation **********
 
+Install Material components:
+npm install --save @angular/material
+
+Install Component Development Kit:
+npm install --save @angular/cdk
+
+Install component for animations:
+npm install --save @angular/animations
+
+To add gesture support install hammerjs:
+npm install --save hammers
+
+*****************************************************************
