@@ -1,1 +1,10 @@
+***********************************************************
+********** Bootstrap Installation instructions **********
 
+Method-1:
+npm install ngx-bootstrap --save
+
+Method-2:
+ng add ngx-bootstrap
+
+***********************************************************
