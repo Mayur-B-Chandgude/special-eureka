@@ -1,0 +1,15 @@
+<div *ngIf="flag; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h1>Number is Prime</h1>
+</ng-template>
+
+<ng-template #elseblock>
+  <h1>Number is not Prime</h1>
+</ng-template>
+
+<div>
+    <h1>
+        {{"Capital letters are : " + ret}}
+    </h1>
+</div>
