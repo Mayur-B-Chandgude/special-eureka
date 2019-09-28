@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <app-comp [ParentData]="Parent_Message" (MyEvent)="Message=$event"></app-comp>
+  <h2>
+    {{Message}}
+  </h2>
+</div>
+
+<router-outlet></router-outlet>
